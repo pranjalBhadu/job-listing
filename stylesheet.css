@@ -1,0 +1,159 @@
+ * {
+     margin: 0 auto;
+     padding: 0;
+     box-sizing: border-box;
+ }
+body{
+     background-color: #F0FAFB;
+    height: 100vh;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+  
+}
+.header{
+    background-color: #5DA5A4;
+    height: 150px;
+    width: 100%;
+}
+
+.tag-container{
+     border-radius: 3px;
+  background: #fff;
+    position: absolute;
+    left: 150px;
+    top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 1050px;
+}
+
+.tag-container .tag {
+  height: 30px;
+  margin: 5px;
+  padding: 5px 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: #333;
+    background-color: #F0FAFB;
+  cursor: default;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 6px 15px;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+
+.tag span{
+    margin-right: 0;
+}
+
+i{
+    background: #5DA5A4;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;   
+}
+i:hover{
+    background: #022124;
+    cursor: pointer;
+}
+.cards{
+   margin: 75px 150px;
+}
+.card{
+    height: 135px;
+    background-color: white;
+    margin-top: 18px;
+    position: relative;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.card::after, .tag-container::after{
+    content: "";
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    z-index: -1;
+    box-shadow: 0 0px 30px 0px #5DA5A4;
+}
+.card:hover{
+    border-left: 5px solid #5DA5A4;
+}
+.card img{
+    float: left;
+    margin: 24px;
+}
+
+.info{
+    padding: 24px;
+}
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+.brand{
+    color: #2da2ad;
+    float: left;
+    margin-right: 12px;
+}
+.new,.featured{
+    float: left;
+    display: inline-block;
+    color: white;
+    background-color: #5DA5A4;
+    width: 50px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 14px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+.featured{
+    background-color: #022124;
+    width: 70px;
+}
+.role{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+ul{
+    display: inline-flex;
+}
+li{
+    color: gray;
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: normal;
+}
+.active{
+    list-style: none;
+    margin-left: 0;
+}
+
+span{
+    display: inline-block;
+    color: #5DA5A4;
+    background-color: #F0FAFB;
+    margin-right: 6px;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+.tags{
+   position: absolute;
+    right: 40px;
+    top: 40%;
+}
